@@ -9,7 +9,7 @@ header, .hero-section {
     background-color: #1F2937;
 }
 
-.header, .hero-container {
+.header, .hero-container, .info-section {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -47,7 +47,7 @@ a {
 }
 
 @media (max-width: 600px) {
-    .header {
+    .header, .info-section {
         flex-direction: column; /* Pagpatungin ang logo at nav */
         gap: 15px;              /* Bigyan ng space sa pagitan nila */
         text-align: center;
@@ -90,4 +90,34 @@ button {
     border: 2px solid white;
     border-radius: 0.5em;
     object-fit: cover;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box img {
+    border: 3.5px solid #3882F6;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+}
+
+.info-text {
+    font-size: 2.25em;
+    color: #1F2937;
+    font-weight: 900;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.description {
+    /*max-width: 150px;*/
+    max-width: 30ch;
+    padding: 0.5em 0;
+    text-align: center; 
 }
