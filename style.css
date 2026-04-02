@@ -5,78 +5,22 @@
     font-family: "Roboto", sans-serif;
 }
 
-/*
-.main-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header, .hero-section {
-    background-color: #1F2937;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding: 8px 250px 50px;
-}
-
-.hero-section-container {
-    display: block;
-}
-
-.header-container {
-    display: flex;
-    list-style-type: none;
-    gap: 25px;
-}
-
-.hero-logo {
-    color: #F9FAF8;
-    font-size: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-.hero-main-text {
-    width: 20ch;
-    color: #F9FAF8;
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.hero-sub-text {
-    color: #E5E7EB;
-    font-size: 18px;
-}
-
-.button {
-    padding-top: 0.5em;
-}
-
-button {
-    padding: 0.5em;
-    border-radius: 10px;
-    background-color: #3882F6;
-    color: #F9FAF8;
-    font-weight: bold;
-} */
-
-.hero-section {
+header, .hero-section {
     background-color: #1F2937;
 }
 
 .header, .hero-container {
-    width: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
 }
 
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .hero-container {
@@ -87,30 +31,44 @@ button {
     color: #F9FAF8;
     font-size: 1.5rem;
     font-weight: 900;
+    display: flex;
 }
 
 ul {
     display: flex;
     list-style: none;
-    gap: 24px;
+    gap: 32px;
 }
 
 a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
     color: #E5E7EB;
 }
 
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column; /* Pagpatungin ang logo at nav */
+        gap: 15px;              /* Bigyan ng space sa pagitan nila */
+        text-align: center;
+    }
+    
+    ul {
+        justify-content: center; /* I-center ang links */
+        padding: 0;
+    }
+}
+
 .hero-main-text {
-    width: 20ch;
+    max-width: 20ch;
     color: #F9FAF8;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
 }
 
 .hero-sub-text {
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .button-container {
@@ -125,10 +83,11 @@ button {
     font-weight: bold;
 }
 
-img {
-    width: 20%;
+.image-container img {
+    width: 100%;
+    max-width: 350px;
     height: auto;
     border: 2px solid white;
     border-radius: 0.5em;
-    position: relative;
+    object-fit: cover;
 }
