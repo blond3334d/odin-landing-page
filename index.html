@@ -6,35 +6,67 @@
     <title>Adrian's Landing Page</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <h1 class="hero-logo">CineMarahuyo</h1>
+    <!--
+    <header class=" main-container header">
+        <h1 class="hero-logo header-container">CineMarahuyo</h1>
 
         <nav class="header-links">
-            <ul>
-                <li><a href="#">Screening Events</a></li>
+            <ul class="header-container">
                 <li><a href="#">Location</a></li>
+                <li><a href="#">Screening Events</a></li>
                 <li><a href="#">About CineMarahuyo</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="first-section">
-            <h1 class="hero-main-text">Beyond the lense, Into the Enchantment</h1>
-            <div class="hero-sub-text">We curate a selection of films that do more than entertain — they entertain.</div>
-            <div class="button"><button>Book a ticket</button></div>
-
+    <main class="main-container">
+        <section class="hero-section">
+            <div class="hero-section-container">
+                <h1 class="hero-main-text">Beyond the lense, Into the Enchantment</h1>
+                <div class="hero-sub-text">We curate a selection of films that do more than entertain — they enchant.</div>
+                <div class="button"><button>Book a ticket</button></div>
+            </div>
             <div class="main-image">
                 <img src="images/krists-luhaers-AtPWnYNDJnM-unsplash.jpg" alt="people watching movie" width="400" height="200">
             </div>
         </section>
 
-        <section class="second-section">
-            <div class="random-info">We offer a variety of genre :P</div>
-        </section>
-    </main>    
+    </main>   --> 
+
+    <!-- First Section -->
+    <section class="hero-section">
+
+        <div class="header">
+            <div class="hero-logo">Cine<em>Marahuyo</em></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Screening Events</a></li>
+                    <li><a href="#">About CineMarahuyo</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <article class="header">
+            <article class="hero-container">
+                <div class="hero-main-text">Beyond the lense, Into the Enchantment</div>
+                <div class="hero-sub-text">We curate a selection of films that do more than entertain — they enchant.</div>
+
+                <div class="button-container">
+                    <button>Secure your ticket!</button>
+                </div>
+            </article>
+
+            <img src="images/krists-luhaers-AtPWnYNDJnM-unsplash.jpg" alt="people watching a movie">
+        </article>
+
+    </section>
+
 </body>
 </html>
