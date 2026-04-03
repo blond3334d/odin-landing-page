@@ -9,7 +9,10 @@ header, .hero-section {
     background-color: #1F2937;
 }
 
-.header, .hero-container, .info-section {
+.header, 
+.hero-container, 
+.info-section,
+.cta-section {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,9 +26,6 @@ header, .hero-section {
     justify-content: space-between;
 }
 
-.hero-container {
-    display: block;
-}
 
 .hero-logo {
     color: #F9FAF8;
@@ -47,16 +47,25 @@ a {
 }
 
 @media (max-width: 600px) {
-    .header, .info-section {
-        flex-direction: column; /* Pagpatungin ang logo at nav */
-        gap: 15px;              /* Bigyan ng space sa pagitan nila */
+    .header, .info-section, .group, .cta-container {
+        flex-direction: column;
+        gap: 15px;              
         text-align: center;
+    }
+
+    .set {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+        width: 100%;
     }
     
     ul {
-        justify-content: center; /* I-center ang links */
+        justify-content: center; 
         padding: 0;
     }
+
 }
 
 .hero-main-text {
@@ -71,11 +80,18 @@ a {
     font-size: 1.125rem;
 }
 
+.marahuyo {
+    color: #E5E7Eb;
+    font-style: italic;
+    font-size: 0.9rem;
+    padding-bottom: 8px;
+}
+
 .button-container {
     padding-top: 0.5em;
 }
 
-button {
+.sign-up-button {
     padding: 0.5em;
     border-radius: 10px;
     background-color: #3882F6;
@@ -85,21 +101,23 @@ button {
 
 .image-container img {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     height: auto;
     border: 2px solid white;
     border-radius: 0.5em;
     object-fit: cover;
 }
 
-.info-section {
+.group {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.image-box img {
+.set {
+    flex-direction: column;
+}
+
+img {
     border: 3.5px solid #3882F6;
     border-radius: 10px;
     width: 100%;
@@ -108,6 +126,9 @@ button {
 }
 
 .info-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2.25em;
     color: #1F2937;
     font-weight: 900;
@@ -116,8 +137,91 @@ button {
 }
 
 .description {
-    /*max-width: 150px;*/
-    max-width: 30ch;
+    max-width: 150px;
     padding: 0.5em 0;
-    text-align: center; 
+    margin-top: 15px;
+    text-align: center;
+    color: #1F2937;
+    font-size: 1em;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    width: 100%;
+    padding: 3em;
+}
+
+.quote, .said-by {
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.quote {
+    font-size: 2.25em;
+    color: #1F2937;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}
+
+.said-by {
+    font-size: 1.5em;
+    color: #1F2937;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+}
+
+.cta-section {
+    padding: 5em 0;
+}
+
+.cta-container {
+    border-radius: 0.5em;
+    background-color: #3882F6;
+    width: 100%;
+    padding: 2em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-main, .cta-subtext {
+    color: #F9FaF8;
+    padding-bottom: 0.25em;
+}
+
+.cta-main {
+    font-weight: 900;
+    font-size: 1.125rem;
+}
+
+.secure-button {
+    padding: 0.5em;
+    border: 3px solid #E5E7EB;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer {
+    background-color: #1F2937;
+    width: 100%;
+    padding: 1.5em;
+}
+
+.footnote {
+    font-size: 1rem;
+    color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
